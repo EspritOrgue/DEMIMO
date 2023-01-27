@@ -7,7 +7,7 @@
     "MARKDOWN": "cours"
   },
   "themes": {
-    "1": { "primary":"#0061D4","secondary":"#FFFFFF", "tertiary":"#FFFFFF"},
+    "1": { "primary":"#0077b4","secondary":"#FFFFFF", "tertiary":"#FFFFFF"},
     "2": { "primary":"#FFBC00","secondary":"#FF8D00", "tertiary":"#FFF9C5"},
     "3": { "primary":"#00D6B2","secondary":"#00A585", "tertiary":"#D9FFF8"},
     "4": { "primary":"#FF0049","secondary":"#A5003F", "tertiary":"#FF85A2"}
