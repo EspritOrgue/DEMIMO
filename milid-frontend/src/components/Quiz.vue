@@ -4,9 +4,9 @@
     <div ref="raw_root" v-html="quizContent" />
     <div class="center">
       <div style="height:20px"/>
-      <button 
-      @click.once="validate" 
-      :disabled="!allQuestionsHaveAtLeastOneAnswer" 
+      <button
+      @click.once="validate"
+      :disabled="!allQuestionsHaveAtLeastOneAnswer"
       class="validate-btn"
       :key="buttonKey"
       v-bind:class="{ validateBtnActive: allQuestionsHaveAtLeastOneAnswer }">
@@ -15,7 +15,7 @@
     </div>
     <p>{{validationText}}</p>
     <div class="center">
-      <button 
+      <button
       @click.once="reStart"
       v-if="showRetryBtn"
       :key="buttonKey"
@@ -82,7 +82,7 @@
 
     position: relative;
   }
-  
+
   /* .quiz /deep/ .quiz-btn:hover
   {
     background-color: var(--lesson-color);
@@ -142,7 +142,7 @@ export default class Quiz extends Vue {
   beforeMount(){
     this.quizContent = this.lesson.quiz;
   }
-  
+
   mounted(){
     this.setupQuiz();
   }
@@ -150,15 +150,15 @@ export default class Quiz extends Vue {
   beforeDestroy(){
     this.cleanup();
   }
-  
+
   get module() {
-    return $module.getModuleWithId(this.moduleId);    
+    return $module.getModuleWithId(this.moduleId);
   }
 
   get lesson(){
     return $module.getLessonForModuleAndLessonId(this.moduleId, this.lessonId);
   }
-  
+
   get cssVars(){
       return {
         '--lesson-color': $config.store.config.themes[this.module.theme].primary,
@@ -183,7 +183,7 @@ export default class Quiz extends Vue {
 
     if(correctAnswersCount == questionCount){
       // no errors
-      this.validationText = "Bravo, tu as répondu correctement au Quizz!";
+      this.validationText = "Bravo, tu as répondu correctement au Quiz!";
     }else{
       // there were errors
       this.validationText = `Tu as trouvé ${correctAnswersCount} réponse${plural} sur ${questionCount}.`
@@ -215,7 +215,7 @@ export default class Quiz extends Vue {
     // find questionSet containing button and deactivate all buttons
     const id = e.target.id;
     this.questionSets.find(questionSet => questionSet.containsId(id)).deActivateAllButtons();
-    
+
     // activate target
     e.target.classList.toggle('active');
     this.allQuestionsHaveAtLeastOneAnswer = this.computeStatus();
@@ -233,7 +233,7 @@ export default class Quiz extends Vue {
       // create a question set;
       questionDivs.forEach(questionDiv => {
         const questionSet = new QuestionSet(questionSetId.toString());
-       
+
         questionDiv.querySelectorAll('.quiz-btn').forEach((quizBtn ) => {
           const id = `qust_btn_id_${idCounter++}`;
           quizBtn.id = id;
