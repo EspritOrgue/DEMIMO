@@ -35,7 +35,7 @@ export class ConfettiElement {
     this.confetti = new Confetti(this.canvas, {
       numberOfPieces: 300,
       recycle: false,
-      colors: ['#6900FF', '#FFBC00', '#00D6B2', '#FF0049']
+      colors: ['#0077b4', '#e84a64', '#e8e664']
     }) as Confetti;
 
     setTimeout(() => this.stop(), 8000);
