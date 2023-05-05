@@ -28,11 +28,13 @@
       <h1>À propos</h1>
       <p>DEMIMO a vu le jour dans le cadre de l’appel à projet du bureau de la stratégie numérique, entre la HEG et la HEAD.</p>
 
-      <p>HEG (Haute Ecole de gestion de Genève) : La HEG de Suisse à regrouper les quatre filières d'études reliées au domaine de l'économie et des services : économie d'entreprise, informatique de gestion, information documentaire et International Business Management.</p>
+      <p>HEG (Haute Ecole de gestion de Genève) : La HEG est la seule de Suisse à regrouper les quatre filières d'études reliées au domaine de l'économie et des services : économie d'entreprise, informatique de gestion, information documentaire et International Business Management.</p>
 
       <p>HEAD (Haute Ecole d’Art et de Design) : La HEAD est née en 2006 de la fusion de deux écoles bicentenaires (l’Ecole supérieure des Beaux-Arts et de la Haute école d’Arts appliqués) et s’est imposée comme l’une des meilleures écoles d’art et de design en Europe.</p>
 
-      <p>Le projet a été réalisé sous la supervision de René Schneider (HEG) et Anthony Masure (HEAD), le contenu a été créé par Nicolas Tregan, le design et les médias ont étés créés par Vincent de Vevey. Amir Alwash a adapté la partie informatique, et Éloïse Morisod et Joseph Baud-Grasset ont assisté le projet.</p>
+      <p>HEAD (Haute Ecole d’Art et de Design) : La HEAD est née en 2006 de la fusion de deux écoles bicentenaires (l’Ecole supérieure des Beaux-Arts et de la Haute école d’Arts appliqués) et s’est imposée comme l’une des meilleures écoles d’art et de design en Europe.</p>
+
+      <p>Le projet a été réalisé sous la supervision de René Schneider (HEG) et Anthony Masure (HEAD), le contenu a été créé par Nicolas Tregan, le design et les médias ont été créés par Vincent de Vevey. Amir Alwash a adapté la partie informatique. Éloïse Morisod et Joseph Baud-Grasset ont assistés le projet.</p>
     </div>
   </div>
 </template>
